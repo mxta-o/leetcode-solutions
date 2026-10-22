@@ -14,4 +14,24 @@ class Solution:
                 if nums[i] == nums[j]:
                     return True
         return False
+
+
+# optimized solution
+# hashset to store each element
+# such that if the element is in the hashset
+# then it returns true
+
+# it would have a runtime of O(n) because you only iterate
+# through the list once
+
+class Solution:
+    def containsDuplicate(self, nums:list[int]) -> bool:
+        seen = set()
+        for i in nums:
+            if i in seen:
+                return True
+            else:
+                seen.add(i)
+        return False
+    # bang look at that O(n) SON read em and weep
         
