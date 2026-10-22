@@ -1,2 +1,2 @@
 # leetcode-solutions
-for stashing my leetcode solutions blah
+public repo for storing my leetcode solutions, mostly gonna be in python and java
