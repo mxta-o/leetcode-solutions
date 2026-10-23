@@ -19,4 +19,8 @@ class Solution:
             if list_s[char] != list_t[char]:
                 return False
         return True
+# this algorithm is O(nlogn) because of the .sort() method
+# there is an O(n) runtime for converting the strings to lists
+# and O(n) for the loop comparing the chars but in
+# practice you usually simplify to the fastest growing term
         
